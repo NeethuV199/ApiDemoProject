@@ -123,7 +123,6 @@ public class TouchPaintPage {
         Allure.addAttachment("Zoom Out", new ByteArrayInputStream(DriverFactory.screenshotUtils(driver, "ZoomOut")));
     }
 
-    //IntStream.range(0,2).forEach(i -> driver.pressKey(new KeyEvent(AndroidKey.BACK)));
     public void goToBackPage(int times) {
         for (int i = 0; i < times; i++) {
             driver.navigate().back();
